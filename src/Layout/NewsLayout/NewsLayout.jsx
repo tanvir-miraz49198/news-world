@@ -1,30 +1,25 @@
 import React from 'react';
-import Header from '../pages/Shared/Header/Header';
-import Footer from '../pages/Shared/Header/Footer/Footer';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import RightNav from '../pages/Shared/RightNav/RightNav';
-import LeftNav from '../pages/Shared/LeftNav/LeftNav';
-import './Layout.css'
 import { Outlet } from 'react-router-dom';
+import Header from '../../pages/Shared/Header/Header';
+import Footer from '../../pages/Shared/Header/Footer/Footer';
+import RightNav from '../../pages/Shared/RightNav/RightNav';
+import LeftNav from '../../pages/Shared/LeftNav/LeftNav';
 
-
-const Layout = () => {
+const NewsLayout = () => {
     return (
         <div>
-            
+
             <Header></Header>
             <Container>
-               
-                <Row>
-                    <Col className='rows ' lg={3}>
-                        <RightNav></RightNav>
 
-                    </Col>
-                    <Col className='rows text-center' lg={6}>
+                <Row>
+                    
+                    <Col className='rows text-center' lg={9}>
                         <Outlet></Outlet>
-                        </Col>
+                    </Col>
                     <Col className='rows text-center' lg={3}>
                         <LeftNav></LeftNav>
 
@@ -34,8 +29,10 @@ const Layout = () => {
 
 
             <Footer></Footer>
+
+
         </div>
     );
 };
 
-export default Layout;
+export default NewsLayout;
