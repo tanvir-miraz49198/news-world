@@ -17,7 +17,10 @@ const NewsLayout = () => {
 
                 <Row>
                     
-                    <Col className='rows text-center' lg={9}>
+                    <Col className='rows md:text-center' lg={3}>
+                        <RightNav></RightNav>
+                    </Col>
+                    <Col className='rows text-center' lg={6}>
                         <Outlet></Outlet>
                     </Col>
                     <Col className='rows text-center' lg={3}>

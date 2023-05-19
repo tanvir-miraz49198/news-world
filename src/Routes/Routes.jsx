@@ -8,7 +8,7 @@ import News from "../pages/News/News/News";
 const router = createBrowserRouter([
     {
         path : "/",
-        element : <Layout></Layout>,
+        element : <NewsLayout></NewsLayout>,
         children : [
             {
                 path : "/",
