@@ -12,18 +12,17 @@ const NewsLayout = () => {
     return (
         <div>
 
-            <Header></Header>
+            
+<Header></Header>
             <Container>
 
                 <Row>
                     
-                    <Col className='rows md:text-center' lg={3}>
-                        <RightNav></RightNav>
-                    </Col>
-                    <Col className='rows text-center' lg={6}>
+                   
+                    <Col className='rows text-center' lg={9}>
                         <Outlet></Outlet>
                     </Col>
-                    <Col className='rows text-center' lg={3}>
+                    <Col className='rows text-center' lg={6}>
                         <LeftNav></LeftNav>
 
                     </Col>
@@ -32,6 +31,7 @@ const NewsLayout = () => {
 
 
             <Footer></Footer>
+            
 
 
         </div>
